@@ -1,7 +1,13 @@
 class Ahorcado 
 
     def arriesga letra
-        'Correcto'
+       if letra.upcase == "M"
+         "Correcto"
+       elsif letra.upcase == "T"
+          "Incorrecto"
+       end
+
     end
 
 end
+
