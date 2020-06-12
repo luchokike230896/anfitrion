@@ -11,7 +11,7 @@ class Ahorcado
          indice= palabra_secreta.index letra.upcase
          @palabra_parcial[indice]= letra.upcase
          @correctas+=1
-         if @correctas==4 
+         if palabra_secreta == @palabra_parcial.join('')
             "¡Ganaste!"
          else
             "Correcto"

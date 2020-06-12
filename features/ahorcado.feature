@@ -28,3 +28,11 @@ Scenario: Inicializa letras con guion
 Given Carga juego
 When Ingreso la letra "m"
 Then Muestra "- M - -"
+
+Scenario: No Acierta palabra secreta 
+Given Carga juego
+When Ingreso la letra "m"
+And Ingreso la letra "a"
+And Ingreso la letra "o"
+And Ingreso la letra "a"
+Then Muestra "Correcto"
