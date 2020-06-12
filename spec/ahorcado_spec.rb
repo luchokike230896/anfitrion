@@ -36,13 +36,6 @@ describe Ahorcado do
         expect(result).to eq 'Correcto'
     end
 
-    it 'Un acierto cuenta como 1' do
-        ahorcado = Ahorcado.new
-        ahorcado.arriesga 'm'
-        resultado= ahorcado.correctas
-
-        expect(resultado).to eq 1
-    end
 
     it 'Al inicio muestra - - - -' do
         ahorcado = Ahorcado.new
