@@ -3,11 +3,12 @@ require './config'
 require './lib/ahorcado'
 
 get '/' do
+    @@ahorcado = Ahorcado.new
     erb :ahorcado
+    
 end
 
 post '/' do
-    ahorcado = Ahorcado.new
-    @resultado = ahorcado.arriesga params['letra']
+    @resultado = @@ahorcado.arriesga params['letra']
     erb :ahorcado
 end
