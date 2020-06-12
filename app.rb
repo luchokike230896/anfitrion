@@ -1,11 +1,13 @@
 require 'sinatra'
 require './config'
+require './lib/ahorcado'
 
 get '/' do
     erb :ahorcado
 end
 
 post '/' do
-    @resultado = "Correcto"
+    ahorcado = Ahorcado.new
+    @resultado = ahorcado.arriesga params['letra']
     erb :ahorcado
 end
