@@ -18,6 +18,15 @@ describe Ahorcado do
 
         expect(result).to eq 'Incorrecto'
     end
+    it 'Ingreso la letra O' do
+        #Arrange
+        ahorcado = Ahorcado.new
+
+        result = ahorcado.arriesga 'O'
+
+        expect(result).to eq 'Correcto'
+    end
+
     it 'Ingreso la letra m' do
         #Arrange
         ahorcado = Ahorcado.new
@@ -26,6 +35,7 @@ describe Ahorcado do
 
         expect(result).to eq 'Correcto'
     end
+
 
 end
 

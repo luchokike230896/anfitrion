@@ -1,10 +1,13 @@
 class Ahorcado 
 
     def arriesga letra
-       if letra.upcase == "M"
+        palabra_secreta = 'AMOR'
+
+        if palabra_secreta.include? letra.upcase
          "Correcto"
-       elsif letra.upcase == "T"
+        else
           "Incorrecto"
+     
        end
 
     end
