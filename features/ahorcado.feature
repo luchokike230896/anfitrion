@@ -16,3 +16,15 @@ And Ingreso la letra "a"
 And Ingreso la letra "o"
 And Ingreso la letra "r"
 Then Muestra "¡Ganaste!"
+
+
+
+Scenario: Inicializa letras con guion
+Given Carga juego
+Then Muestra "- - - -"
+
+
+Scenario: Inicializa letras con guion
+Given Carga juego
+When Ingreso la letra "m"
+Then Muestra "- M - -"
